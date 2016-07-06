@@ -20,7 +20,7 @@ header:
 
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
-{% include improve_content %}
+{% include _improve_content.html %}
 
 ## Different Page/Posts Formats   {#formats}
 
@@ -36,7 +36,7 @@ If you want to show the sidebar, just enter `sidebar: left` or `sidebar: right` 
 
 
 ### Page/Post with or without metadata
-If you want to show metadata like categories, tags and date at the end of the page, just enter `show_meta: true`. It's on by default. You can change it via `config.yml`. To turn of metadata just enter – *yes, you guessed right* – `show_meta: false`.
+If you want to show metadata like categories, tags and date at the end of the page, just enter `show_meta: true`. It's on by default. You can change it via `_config.yml`. To turn of metadata just enter – *yes, you guessed right* – `show_meta: false`.
 
 
 
@@ -114,7 +114,7 @@ With foundation responsive videos are easy. [More ›](http://foundation.zurb.co
 {% endhighlight %}
 
 
-<img class="t60" src="{{ site.url }}/images/header_homepage_13.jpg">
+<img class="t60" src="{{ site.url }}/images/header_homepage_13.jpg" alt="">
 
 ## Images: Title, Thumbnails, Homepage   {#images}
 
@@ -246,7 +246,7 @@ This include creates a next/previous link to a post of the same category using t
 If your content is on Jekyll you can use this include to automatically generate a »Edit on GitHub Link« to give people a possibility to improve your content. Got the idea from [Ben Balters Blog](http://ben.balter.com/).
 
 ~~~
-{% raw %}{% include improve_content %}{% endraw %}
+{% raw %}{% include _improve_content.html %}{% endraw %}
 ~~~
 
 
@@ -309,7 +309,7 @@ I only added one other javascript-module: [`backstretch`][3] by Scott Robbin. Th
 /foundation/js/jquery.backstretch.js'
 ~~~
 
-{% include improve_content %}
+{% include _improve_content.html %}
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
